@@ -3,9 +3,65 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>L-54</title>
+        <title>L-54 : JS Object Properties</title>
+        <script>
+            // I can write the JS code before the closing of head tag
+        </script>
     </head>
     <body>
-        
+        <h1>JS Data Types</h1>
+        <ul>
+            <li>JS Object</li>
+        </ul>
+        <h1 class="mystudent3"></h1>
+        <script src="./js/script.js"></script>
+        <script>
+            // I can write the JS code before the closing of body tag
+            var student1 = { //1995-2023
+                // 1.P:v
+                name:"Lucky",
+                surname:'Khamari'
+            };
+            let _student2={ //2015 onward ES6
+                // 1.property:value
+                name:"Deepak",
+                surname:"sahoo"
+
+                // 2.
+            }
+            const $student3={
+                name:"Rocky",
+                surname:'khamari'
+            }
+            var _student4={ 
+                // 1.property:value
+                name:"Raghu",
+                surname:"singh"
+
+                // 2.
+            }
+
+            // I can display JS code 4-ways
+
+            // 1.first_way console.log
+            // object.property
+            console.log(student1.name+' '+student1.surname);
+
+            // 2.second_way window.alert()
+            // object["property"]
+            window.alert(_student2["name"] +" "+_student2["surname"]);
+
+            // 3.element.innerHTML 3rd_way
+            // objectName[expression];
+            let x = 10; //Expression-1
+            let y = 20; //Expression-2
+            let result = x+y; //Expression3
+            let n = "name";
+            var s = "surname";
+            document.querySelector('h1.mystudent3').innerHTML = $student3[n]+ ` `+$student3[s];
+
+            // 4.document.write();
+            document.write('<strong>'+ _student4["name"]+" "+_student4["surname"]+'</strong>');
+        </script>
     </body>
 </html>
